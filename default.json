@@ -12,13 +12,10 @@
   "prHourlyLimit": 5,
   "packageRules": [
     {
-      "groupName": "Nix Updates",
-      "groupSlug": "nix-updates",
-      "matchPackageNames": [
-        "nixpkgs"
-      ],
-      "matchUpdateTypes": [
-        "digest"
+      "groupName": "All Nix Updates",
+      "groupSlug": "all-nix-updates",
+      "matchManagers": [
+        "nix"
       ]
     }
   ]
