@@ -10,10 +10,17 @@
     "master"
   ],
   "prHourlyLimit": 5,
+  "lockFileMaintenance": {
+    "schedule": [
+      "* 0-3 1,15 * *"
+    ]
+  },
   "packageRules": [
     {
       "groupName": "All Nix Updates",
+      "description": "Group all Nix updates together",
       "groupSlug": "all-nix-updates",
+      "schedule": "monthly",
       "matchManagers": [
         "nix"
       ]
