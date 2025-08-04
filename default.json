@@ -9,5 +9,17 @@
     "main",
     "master"
   ],
-  "prHourlyLimit": 5
+  "prHourlyLimit": 5,
+  "packageRules": [
+    {
+      "groupName": "Nix Updates",
+      "groupSlug": "nix-updates",
+      "matchPackageNames": [
+        "nixpkgs"
+      ],
+      "matchUpdateTypes": [
+        "digest"
+      ]
+    }
+  ]
 }
