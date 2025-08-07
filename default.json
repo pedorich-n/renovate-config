@@ -1,9 +1,11 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "description": "Base Renovate configuration for my repositories. Runs once a month.",
+  "description": "Base Renovate configuration for my repositories.",
   "extends": [
-    "config:best-practices",
-    "schedule:monthly"
+    "config:best-practices"
+  ],
+  "schedule": [
+    "* * 1 * *"
   ],
   "prHourlyLimit": 10,
   "lockFileMaintenance": {
