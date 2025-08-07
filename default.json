@@ -9,10 +9,15 @@
     "main",
     "master"
   ],
-  "prHourlyLimit": 5,
+  "prHourlyLimit": 10,
   "lockFileMaintenance": {
     "schedule": [
-      "* 0-3 1,15 * *"
+      "* * 2,15 * *"
+    ]
+  },
+  "git-submodules": {
+    "schedule": [
+      "* * 3 * *"
     ]
   },
   "packageRules": [
@@ -20,7 +25,7 @@
       "groupName": "All Nix Updates",
       "description": "Group all Nix updates together",
       "groupSlug": "all-nix-updates",
-      "schedule": "monthly",
+      "schedule": "* * 1 * *",
       "matchManagers": [
         "nix"
       ]
