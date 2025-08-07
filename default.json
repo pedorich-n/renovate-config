@@ -14,7 +14,9 @@
   "git-submodules": {
     "schedule": [
       "* * 3 * *"
-    ]
+    ],
+    "automerge": true,
+    "automergeType": "branch"
   },
   "packageRules": [
     {
